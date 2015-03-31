@@ -18,7 +18,11 @@
 
 	<build>
 		<plugins>
-
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>3.0.1</version>
+			</plugin>
 			<plugin>
 				<!-- Build an executable JAR -->
 				<groupId>org.apache.maven.plugins</groupId>
@@ -42,28 +46,33 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			
-			
+
+
 			<plugin>
-			        <groupId>org.apache.maven.plugins</groupId>
-			        <artifactId>maven-checkstyle-plugin</artifactId>
-			        <version>2.15</version>
-			        <configuration>
-			          <configLocation>config/maven_checks.xml</configLocation>
-			        </configuration>
-      		</plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>2.15</version>
+				<configuration>
+					<configLocation>config/maven_checks.xml</configLocation>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
-	  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>2.15</version>
-        <configuration>
-          <configLocation>config/maven_checks.xml</configLocation>
-        </configuration>
-      </plugin>
-    </plugins>
-  </reporting>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>2.15</version>
+				<configuration>
+					<configLocation>config/maven_checks.xml</configLocation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>3.0.1</version>
+			</plugin>
+		</plugins>
+	</reporting>
 </project>
