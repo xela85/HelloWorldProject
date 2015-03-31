@@ -16,7 +16,7 @@ public class HelloWorldTest {
 	
 	@Test
 	public void test() {
-		assertEquals(hello.greeting(), "Hello world !");
+		assertEquals(hello.greeting(), "Hello world ! :D");
 	}
 
 }
