@@ -1,9 +1,10 @@
 
 
 before_install : 
+	cd HelloWorld
 	mvn clean
 	
 	
-install : 
+install :
 	mvn package
 	
