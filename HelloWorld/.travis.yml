@@ -1,0 +1,9 @@
+
+
+before_install : 
+	mvn clean
+	
+	
+install : 
+	mvn package
+	
