@@ -15,6 +15,6 @@ public class HelloWorld {
 	
 	// Commentaire de Chinois LOL
 	public String greeting() {
-		return "Hello world ! :D raté!";
+		return "Hello world ! :D raté2!";
 	}
 }
