@@ -12,6 +12,8 @@ public class HelloWorld {
 	 * @return Hello world string
 	 * @see java.lang.String
 	 */
+	
+	// Commentaire de Chinois 
 	public String greeting() {
 		return "Hello world !";
 	}
