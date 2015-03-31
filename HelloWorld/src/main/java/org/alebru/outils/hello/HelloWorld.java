@@ -13,7 +13,7 @@ public class HelloWorld {
 	 * @see java.lang.String
 	 */
 	
-	// Commentaire de Chinois 
+	// Commentaire de Chinois LOL
 	public String greeting() {
 		return "Hello world ! :D";
 	}
